@@ -4,11 +4,6 @@ Small-scale, honest experiments in post-training: can a self-built, verifiable
 reward signal (tests pass / tests fail) actually improve a small open model,
 measured on held-out tasks?
 
-Loosely the same recipe used in production post-training work (e.g.
-[Patronus AI's Oct 2026 post-training stack writeup](https://www.patronus.ai/blog/post-training-stack)):
-verifiable pass/fail reward + GRPO, just scaled down to run on a laptop plus
-free Kaggle GPU time instead of a GPU cluster.
-
 ## The idea
 
 Reward is 1 if a task's tests pass, 0 if they don't. Tasks come from
